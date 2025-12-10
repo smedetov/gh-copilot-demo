@@ -45,7 +45,9 @@ interface Props {
 const props = defineProps<Props>()
 const cartStore = useCartStore()
 
-const isInCart = computed(() => cartStore.isInCart(props.album.id))
+const isInCart = computed(() => {
+  return cartStore.isInCart(props.album.id)
+})
 
 const handleImageError = (event: Event): void => {
   const target = event.target as HTMLImageElement

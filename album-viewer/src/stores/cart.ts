@@ -37,9 +37,9 @@ export const useCartStore = defineStore('cart', () => {
     return items.value.reduce((total, item) => total + (item.album.price * item.quantity), 0)
   })
 
-  const isInCart = computed(() => (albumId: number) => {
+  const isInCart = (albumId: number) => {
     return items.value.some(item => item.album.id === albumId)
-  })
+  }
 
   // Actions
   const addToCart = (album: Album) => {

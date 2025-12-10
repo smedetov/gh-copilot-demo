@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "🎵 Album Collection" [level=1] [ref=e7]
+        - paragraph [ref=e8]: Discover amazing music albums
+      - button "Shopping cart" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - img "You, Me and an App Id" [ref=e18]
+          - generic [ref=e20] [cursor=pointer]: ▶
+        - generic [ref=e21]:
+          - heading "You, Me and an App Id" [level=3] [ref=e22]
+          - paragraph [ref=e23]: Daprize
+          - generic [ref=e25]: $10.99
+        - generic [ref=e26]:
+          - button "In Cart ✓" [disabled] [ref=e27]
+          - button "Preview" [ref=e28] [cursor=pointer]
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - img "Seven Revision Army" [ref=e31]
+          - generic [ref=e33] [cursor=pointer]: ▶
+        - generic [ref=e34]:
+          - heading "Seven Revision Army" [level=3] [ref=e35]
+          - paragraph [ref=e36]: The Blue-Green Stripes
+          - generic [ref=e38]: $13.99
+        - generic [ref=e39]:
+          - button "Add to Cart" [ref=e40] [cursor=pointer]
+          - button "Preview" [ref=e41] [cursor=pointer]
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - img "Scale It Up" [ref=e44]
+          - generic [ref=e46] [cursor=pointer]: ▶
+        - generic [ref=e47]:
+          - heading "Scale It Up" [level=3] [ref=e48]
+          - paragraph [ref=e49]: KEDA Club
+          - generic [ref=e51]: $13.99
+        - generic [ref=e52]:
+          - button "Add to Cart" [ref=e53] [cursor=pointer]
+          - button "Preview" [ref=e54] [cursor=pointer]
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - img "Lost in Translation" [ref=e57]
+          - generic [ref=e59] [cursor=pointer]: ▶
+        - generic [ref=e60]:
+          - heading "Lost in Translation" [level=3] [ref=e61]
+          - paragraph [ref=e62]: MegaDNS
+          - generic [ref=e64]: $12.99
+        - generic [ref=e65]:
+          - button "Add to Cart" [ref=e66] [cursor=pointer]
+          - button "Preview" [ref=e67] [cursor=pointer]
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - img "Lock Down Your Love" [ref=e70]
+          - generic [ref=e72] [cursor=pointer]: ▶
+        - generic [ref=e73]:
+          - heading "Lock Down Your Love" [level=3] [ref=e74]
+          - paragraph [ref=e75]: V is for VNET
+          - generic [ref=e77]: $12.99
+        - generic [ref=e78]:
+          - button "Add to Cart" [ref=e79] [cursor=pointer]
+          - button "Preview" [ref=e80] [cursor=pointer]
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - img "Sweet Container O' Mine" [ref=e83]
+          - generic [ref=e85] [cursor=pointer]: ▶
+        - generic [ref=e86]:
+          - heading "Sweet Container O' Mine" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Guns N Probeses
+          - generic [ref=e90]: $14.99
+        - generic [ref=e91]:
+          - button "Add to Cart" [ref=e92] [cursor=pointer]
+          - button "Preview" [ref=e93] [cursor=pointer]
+```

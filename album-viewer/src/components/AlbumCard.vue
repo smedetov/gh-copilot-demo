@@ -21,43 +21,24 @@
     </div>
     
     <div class="album-actions">
-      <button 
-        class="btn btn-primary" 
-        @click="handleAddToCart"
-        :disabled="isInCart"
-      >
-        {{ isInCart ? 'In Cart ✓' : 'Add to Cart' }}
-      </button>
+      <button class="btn btn-primary">Add to Cart</button>
       <button class="btn btn-secondary">Preview</button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 import type { Album } from '../types/album'
-import { useCartStore } from '../stores/cart'
 
 interface Props {
   album: Album
 }
 
-const props = defineProps<Props>()
-const cartStore = useCartStore()
-
-const isInCart = computed(() => {
-  return cartStore.isInCart(props.album.id)
-})
+defineProps<Props>()
 
 const handleImageError = (event: Event): void => {
   const target = event.target as HTMLImageElement
   target.src = 'https://via.placeholder.com/300x300/667eea/white?text=Album+Cover'
-}
-
-const handleAddToCart = () => {
-  if (!isInCart.value) {
-    cartStore.addToCart(props.album)
-  }
 }
 </script>
 
@@ -181,15 +162,9 @@ const handleAddToCart = () => {
   color: white;
 }
 
-.btn-primary:hover:not(:disabled) {
+.btn-primary:hover {
   background: #5a6fd8;
   transform: translateY(-2px);
-}
-
-.btn-primary:disabled {
-  background: #9ca8f0;
-  cursor: not-allowed;
-  opacity: 0.7;
 }
 
 .btn-secondary {
